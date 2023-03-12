@@ -10,6 +10,11 @@ def def_y_n(y_or_n):
             print('def:_Please enter y or n')
             y_or_n = def_y_n(input('def:_Please enter y or n: '))
 
+# функция возвращает 90 случайных значений для последовательного выбора игроками
+def def_rand_90():
+    def_rand_90 = [random.randint(1, 2) for i in range(4)]
+    return def_rand_90
+
 # основное тело программы: выбор соперника и стар логики
 while True:
     print('1. Игра Лотто Челове-Компьютер')
@@ -25,7 +30,8 @@ while True:
         a = blank_karta()  # Функция - список занчений для карты игрока из модуля Blank_karta.py
         print('Карта компьютера')
         a1 = blank_karta()  # Функция - список занчений для карты компа из модуля Blank_karta.py
-        b = [random.randint(1, 2) for i in range(4)]
+        # функция - список 90 случ знач для послед вывода
+        b = def_rand_90()
         print(b)
         for i, val in enumerate(b):
             print(f'выбран боченок:{val} (ход № {i+1})')
