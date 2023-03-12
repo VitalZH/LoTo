@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="" />
+    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="Обновлени от 12.03">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT/1_blank_karta.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/1_blank_karta.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT/2_logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/2_logic.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +47,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.1_blank_karta">
-    <configuration name="1_blank_karta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="blank_karta" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LoTo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,7 +59,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HT/1_blank_karta.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gmavi\PycharmProjects\LoTo\HT\blank_karta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,7 +68,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2_logic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="logic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LoTo" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -76,7 +80,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HT/2_logic.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\gmavi\PycharmProjects\LoTo\HT\logic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,6 +105,21 @@
       <option name="presentableId" value="Default" />
       <updated>1677919440571</updated>
     </task>
+    <task id="LOCAL-00001" summary="Обновлени от 12.03">
+      <created>1678627513589</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627513589</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Обновлени от 12.03">
+      <created>1678627687437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678627687437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,5 +132,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Обновлени от 12.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновлени от 12.03" />
   </component>
 </project>
