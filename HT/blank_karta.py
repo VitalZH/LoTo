@@ -1,10 +1,4 @@
 import random
-# функция-1 возвращ 15 рандом знач с разделениием по трем спискам
-#def split_list_15():
- #   list_15 = random.sample(range(0, 91), 15)
-  #  split_list_15 = [sorted(list_15[:5]), sorted(list_15[5:10]), sorted(list_15[10:])]
-   # return split_list_15
-
 
 # декоратор для вывода карточки с разделителями
 def decor_karta(f):
@@ -15,14 +9,14 @@ def decor_karta(f):
         return result
     return wrapper
 
-# функция-2 замена значений в пустой карточке на значения из рандомного списка функц 1 - split_list_15
+# функция замена значений в пустой карточке на значения из рандомного списка - split_list_15
 @decor_karta
 def blank_karta():
     list_15 = random.sample(range(0, 91), 15) # возвращ 15 рандом знач с разделениием по трем спискам
     split_list_15 = [sorted(list_15[:5]), sorted(list_15[5:10]), sorted(list_15[10:])]
     blank_karta = [[' ' for j in range(9)] for i in range(3)] #создаем пустую карту лото
     for i in range(3):
-        ind_in_lin = sorted(random.sample(range(0, 9), 5))
+        ind_in_lin = sorted(random.sample(range(0, 9), 5)) # определяем заполняемые позиции в пустой карточке
         for j, val in enumerate(ind_in_lin):
             blank_karta[i][val] = split_list_15[i][j] # заполняем строки с 1 по 3 пустой карты лото
         print(' '.join(str(j) for j in blank_karta[i]))
