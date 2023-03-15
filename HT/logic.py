@@ -1,6 +1,7 @@
 import random
 from blank_karta import blank_karta
 
+
 # функция проверки правильности ввода "y" or "n" - обработка исключений
 def def_y_n(y_or_n):
     while True:
@@ -10,15 +11,21 @@ def def_y_n(y_or_n):
             print('def:_Please enter y or n')
             y_or_n = def_y_n(input('def:_Please enter y or n: '))
 
+
 # функция возвращает 90 случайных значений для последовательного выбора игроками
 def def_rand_90():
-    def_rand_90 = [random.randint(1, 90) for i in range(10)]
+    def_rand_90 = [random.randint(1, 10) for i in range(5)]
     return def_rand_90
+
+def def_rand_91():
+    def_rand_91 = random.sample(range(1,11), 10)
+    return def_rand_91
+
 
 # запуск функции зачеркивания значения в карте Игрока "a"
 def zamena_val(val):
     a = [['X' if x == val else x for x in sublist] for sublist in a]
-
+    return a
 
 
 # основное тело программы: выбор соперника и стар логики
@@ -37,17 +44,20 @@ while True:
         a1 = blank_karta()  # Функция - список занчений для карты компа из модуля Blank_karta.py
         # функция - список 90 случ знач для послед вывода
         b = def_rand_90()
+        b1 = def_rand_91()
         print(b)
+        print(b1)
 
         # логический блок проверки ответов Игрока
         for i, val in enumerate(b):
-            print(f'выбран боченок:{val} (ход № {i+1})')
+            print(f'выбран боченок:{val} (ход № {i + 1})')
             # функция проверки на правильный ввод 'y' или 'n'
             print(a)
             y_or_n = def_y_n(input(f'число {val} присутствует в карте Игрока? нажмите (y/n):'))
 
-            if y_or_n == 'y':
-                a = [zamena_val(val) for sublist in a if val in sublist and y_or_n == 'y']# запуск функции зачеркивания значения в карте
+            if y_or_n == 'y' and val in a:
+                a = [zamena_val(val) for sublist in a if
+                     val in sublist and y_or_n == 'y']  # запуск функции зачеркивания значения в карте
                 print(' Правильно! функция - зачеркнуть val + переход к след i')
 
                 print(f'[a]: {a}')
