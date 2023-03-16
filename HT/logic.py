@@ -10,7 +10,7 @@ def def_y_n(y_or_n):
             print('def:_Please enter y or n')
             y_or_n = def_y_n(input('def:_Please enter y or n: '))
 
-# функция формирования списка для карты лотто
+# функция формирования списка для карты лотто 15 из 90 значений
 def def_karta():
     a = random.sample(range(1,11), 5)
     return a
@@ -19,17 +19,22 @@ def def_karta():
 def def_rand_90():
     def_rand_90 = random.sample(range(1,11), 10)
     return def_rand_90
-'''
-def def_rand_90():
-    def_rand_90 = [random.randint(1, 10) for i in range(5)]
-    return def_rand_90
-'''
 
 # запуск функции зачеркивания значения в карте Игрока "a"
 def zamena_val(val, list):
     a1 = ['X' if x == val else x for x in list]
     return a1
 
+# функция проверки кто выиграл
+def def_win(list):
+    c = 0
+    for x in list:
+        if x == 'X':
+            c += 1
+    if c == len(list):
+        return True
+    else:
+        return False
 
 # основное тело программы: выбор соперника и стар логики
 while True:
@@ -51,6 +56,9 @@ while True:
 
             # функция зачеркивания ответов в карточке компа
             a_comp = zamena_val(val, a_comp)
+            if def_win(a_comp) == True: # проверка победы компа
+                print('Победил Компьютер!')
+                break
 
             print(f'карта компа: {a_comp}')
             print(f'карта игрока: {a_igrok}')
@@ -60,7 +68,10 @@ while True:
 
             if y_or_n == 'y' and val in a_igrok:
                 print(' Правильно! функция - зачеркнуть val + переход к след i')
-                a_igrok = zamena_val(val, a_igrok)
+                a_igrok = zamena_val(val, a_igrok) # зачеркнуть значение в карте Игрока
+                if def_win(a_igrok) == True:# проверка победы Игрока
+                    print('Победил Игрок!')
+                    break
 
             elif y_or_n == 'n' and val not in a_igrok:
                 print('Правильно! следующий ход')
