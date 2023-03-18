@@ -1,7 +1,7 @@
 import random
 from blank_karta import blank_karta
 
-# функция проверки правильности ввода "y" or "n" - обработка исключений
+# функция проверки правильности ввода "y" or "n" Игрока - обработка исключений
 def def_y_n(y_or_n):
     while True:
         if y_or_n == 'y' or y_or_n == 'n':
@@ -12,12 +12,17 @@ def def_y_n(y_or_n):
 
 # функция формирования списка для карты лотто 15 из 90 значений
 def def_karta():
-    a = random.sample(range(1,11), 5)
+    a = random.sample(range(1,91), 15)
     return a
+
+ # функция определения индексов в пустой карте для заполнения знач из def_karta
+def def_poz():
+    e = sorted(random.sample(range(0, 9), 5))
+    return e
 
 # функция возвращает 90 случайных значений для последовательного выбора игроками
 def def_rand_90():
-    def_rand_90 = random.sample(range(1,11), 10)
+    def_rand_90 = random.sample(range(1,91), 15)
     return def_rand_90
 
 # запуск функции зачеркивания значения в карте Игрока "a"
@@ -31,10 +36,21 @@ def def_win(list):
     for x in list:
         if x == 'X':
             c += 1
+    # или код выше заменить на код: c = sum(1 for x in list if x == 'X')
     if c == len(list):
         return True
     else:
         return False
+
+# функция вывода красивой ЛОТО карточки с пробелами
+def def_karta(list, poz):
+    blank_karta = [[' ' for j in range(9)] for i in range(3)] #создаем пустую карту лото
+    split_list = [sorted(list[:5]), sorted(list[5:10]), sorted(list[10:])] #разделение знач карты на три списка
+    for i in range(3):
+        for j, val in enumerate(poz[i]):
+            blank_karta[i][val] = split_list[i][j] # заполняем строки с 1 по 3 пустой карты лото
+    return '\n'.join([' '.join(str(j) for j in row) for row in blank_karta])
+
 
 # основное тело программы: выбор соперника и стар логики
 while True:
@@ -45,12 +61,17 @@ while True:
     choice = input('Выберите пункт меню:')
     if choice == '1':
         print('Вы выбрали игру Лотто Челове-Компьютер')
-        a_igrok = def_karta()  # Функция - список занчений для карты игрока из модуля Blank_karta.py
-        a_comp = def_karta()  # Функция - список занчений для карты компа из модуля Blank_karta.py
-        b = def_rand_90() # функция - список 90 случ знач для послед вывода
-        print(f'список случ чиc b: {b}')
+        a_igrok = def_karta()  # Функция - список занчений для карты игрока
+        a_igrok_poz = def_poz()  # Функция - список № позиций для карты игрока
 
-        # логический блок проверки ответов Игрока и Компа
+        a_comp = def_karta()  # Функция - список занчений для карты компа
+        a_comp_poz = def_poz()  # Функция - список № позиций для карты компа
+
+        b = def_rand_90() # функция - список 90 случ знач для послед вывода
+        print(f'список СЛУЧАЙНЫХ чиcел: {b}')
+
+
+        # логический блок - рандом боченка и проверки ответов Игрока и Компа
         for i, val in enumerate(b):
             print(f'выбран боченок:{val} (ход № {i + 1})')
 
@@ -60,10 +81,10 @@ while True:
                 print('Победил Компьютер!')
                 break
 
-            print(f'карта компа: {a_comp}')
-            print(f'карта игрока: {a_igrok}')
+            print(f'карта компа: {def_karta(a_comp, a_comp_poz)}')
+            print(f'карта игрока: {def_karta(a_igrok, a_igrok_poz)}')
 
-            # функция проверки на правильный ввод 'y' или 'n'
+            # функция проверки на правильный ввод 'y' или 'n' Игрока
             y_or_n = def_y_n(input(f'число {val} присутствует в карте Игрока? нажмите (y/n):'))
 
             if y_or_n == 'y' and val in a_igrok:
