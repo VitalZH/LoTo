@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="z">
+    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="Испарвить&#10;def_karta - два раза функция с одним именем.&#10;&#10;Изменения&#10;Добавлен вывод карты тремя строками через def_karta (здесь дубль испарвить)&#10;Для вывода тремя строками сформирована функция def_poz возвращ № индексов в пустой кате куда вставляем значения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT/blank_karta.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/blank_karta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HT/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/logic.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678980596054</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Испарвить&#10;def_karta - два раза функция с одним именем.&#10;&#10;Изменения&#10;Добавлен вывод карты тремя строками через def_karta (здесь дубль испарвить)&#10;Для вывода тремя строками сформирована функция def_poz возвращ № индексов в пустой кате куда вставляем значения">
+      <created>1679165994998</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679165994998</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,6 +256,7 @@
     <MESSAGE value="Обновлени от 12.03" />
     <MESSAGE value="изменение логики (без вложенных списков)15.03" />
     <MESSAGE value="z" />
-    <option name="LAST_COMMIT_MESSAGE" value="z" />
+    <MESSAGE value="Испарвить&#10;def_karta - два раза функция с одним именем.&#10;&#10;Изменения&#10;Добавлен вывод карты тремя строками через def_karta (здесь дубль испарвить)&#10;Для вывода тремя строками сформирована функция def_poz возвращ № индексов в пустой кате куда вставляем значения" />
+    <option name="LAST_COMMIT_MESSAGE" value="Испарвить&#10;def_karta - два раза функция с одним именем.&#10;&#10;Изменения&#10;Добавлен вывод карты тремя строками через def_karta (здесь дубль испарвить)&#10;Для вывода тремя строками сформирована функция def_poz возвращ № индексов в пустой кате куда вставляем значения" />
   </component>
 </project>

@@ -17,7 +17,7 @@ def def_karta():
 
  # функция определения индексов в пустой карте для заполнения знач из def_karta
 def def_poz():
-    e = sorted(random.sample(range(0, 9), 5))
+    e = [sorted(random.sample(range(0, 9), 5)) for i in range(3)]
     return e
 
 # функция возвращает 90 случайных значений для последовательного выбора игроками
@@ -43,7 +43,7 @@ def def_win(list):
         return False
 
 # функция вывода красивой ЛОТО карточки с пробелами
-def def_karta(list, poz):
+def def_karta_stroki(list, poz):
     blank_karta = [[' ' for j in range(9)] for i in range(3)] #создаем пустую карту лото
     split_list = [sorted(list[:5]), sorted(list[5:10]), sorted(list[10:])] #разделение знач карты на три списка
     for i in range(3):
@@ -81,8 +81,8 @@ while True:
                 print('Победил Компьютер!')
                 break
 
-            print(f'карта компа: {def_karta(a_comp, a_comp_poz)}')
-            print(f'карта игрока: {def_karta(a_igrok, a_igrok_poz)}')
+            print(f'карта компа: \n {def_karta_stroki(a_comp, a_comp_poz)}')
+            print(f'карта игрока: \n {def_karta_stroki(a_igrok, a_igrok_poz)}')
 
             # функция проверки на правильный ввод 'y' или 'n' Игрока
             y_or_n = def_y_n(input(f'число {val} присутствует в карте Игрока? нажмите (y/n):'))
