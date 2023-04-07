@@ -1,5 +1,4 @@
 import random
-from blank_karta import blank_karta
 
 # функция проверки правильности ввода "y" or "n" Игрока - обработка исключений
 def def_y_n(y_or_n):
@@ -22,13 +21,18 @@ def def_poz():
 
 # функция возвращает 90 случайных значений для последовательного выбора игроками
 def def_rand_90():
-    def_rand_90 = random.sample(range(1,91), 15)
+    def_rand_90 = random.sample(range(1,91), 90)
     return def_rand_90
 
 # запуск функции зачеркивания значения в карте Игрока "a"
-def zamena_val(val, list):
-    a1 = ['X' if x == val else x for x in list]
+def zamena_val(val, lst):
+    a1 = ['X' if x == val else x for x in lst]
     return a1
+'''
+            if num in a_igrok:
+                idx = a_igrok.index(num)
+                a_igrok[idx] = " "
+'''
 
 # функция проверки кто выиграл
 def def_win(list):
@@ -45,12 +49,15 @@ def def_win(list):
 # функция вывода красивой ЛОТО карточки с пробелами
 def def_karta_stroki(list, poz):
     blank_karta = [[' ' for j in range(9)] for i in range(3)] #создаем пустую карту лото
-    split_list = [sorted(list[:5]), sorted(list[5:10]), sorted(list[10:])] #разделение знач карты на три списка
+    #split_list = [sorted(list[:5]), sorted(list[5:10]), sorted(list[10:])] #разделение знач карты на три списка
+    split_list = [sorted(map(str, list[:5])), sorted(map(str, list[5:10])), sorted(map(str, list[10:]))]
+
     for i in range(3):
         for j, val in enumerate(poz[i]):
             blank_karta[i][val] = split_list[i][j] # заполняем строки с 1 по 3 пустой карты лото
     return '\n'.join([' '.join(str(j) for j in row) for row in blank_karta])
 
+    #split_list = [sorted(map(str, list[:5])), sorted(map(str, list[5:10])), sorted(map(str, list[10:]))]
 
 # основное тело программы: выбор соперника и стар логики
 while True:
