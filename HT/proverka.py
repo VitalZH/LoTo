@@ -51,7 +51,7 @@ class Class_2:
     # функция проверки окончания боченков, кто выиграл
     def def_win(self, karta_c):
         c = 0
-        for x in karta_c:
+        for x in self.karta_c:
             if x == 'X':
                 c += 1
         # или код выше заменить на код: c = sum(1 for x in list if x == 'X')
@@ -59,26 +59,34 @@ class Class_2:
             return True
         else:
             return False
-
-    def do_replace(self):
-        for i, val in enumerate(self.rand_90):
-            print(f'выбран боченок:{val} (ход № {i + 1})')
-            carta_c = ['X' if x == val else x for x in self.karta_c]
-            print(f'____карта компа____ \n {karta_c}')
-        return carta_c
+# функция земены значеня на "Х" при совпадеиии с рандомом боченков
+    def do_replace(self, karta_c, karta_i):
+        for i in range(len(self.rand_90)):
+            print(f'выбран боченок:{self.rand_90[i]} (ход № {i + 1})')
+            self.karta_c = [['X' if j == str(self.rand_90[i]) else j for j in row] for row in self.karta_c]
+            c = sum(1 for row in self.karta_c for j in row if j == 'X')
+            self.karta_i = [['X' if j == str(self.rand_90[i]) else j for j in row] for row in self.karta_i]
+            i = sum(1 for row in self.karta_i for j in row if j == 'X')
+            print(f'____карта компа____ \n {self.karta_c}')
+            print('c', c)
+            print(f'____карта игрока____ \n {self.karta_i}')
+            print('i', i)
+        return self.karta_c, karta_i
 
 
 # создаем объект(karta1,2) класса Lotto()
-class1_obj = Lotto()
-karta_c = class1_obj.karta_stroki
+class_obj1 = Lotto()
+karta_c = class_obj1.karta_stroki
 print('karta1', karta_c)
 
-class2_obj = Lotto()
-karta_i = class2_obj.karta_stroki
+class_obj2 = Lotto()
+karta_i = class_obj2.karta_stroki
 print('karta2', karta_i)
 
-с = Class_2(karta_c, karta_i)
-с.do_replace()
+class2 = Class_2(karta_c, karta_i)
+print('def_rnd', class2.def_rand_90())
+print('rand_90', class2.rand_90)
+class2.do_replace(karta_c, karta_i)
 
 
 while True:

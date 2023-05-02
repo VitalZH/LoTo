@@ -7,6 +7,7 @@
     <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HT/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT/proverka.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/proverka.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,5 +270,16 @@
     <MESSAGE value="Испарвить&#10;def_karta - два раза функция с одним именем.&#10;&#10;Изменения&#10;Добавлен вывод карты тремя строками через def_karta (здесь дубль испарвить)&#10;Для вывода тремя строками сформирована функция def_poz возвращ № индексов в пустой кате куда вставляем значения" />
     <MESSAGE value="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'" />
     <option name="LAST_COMMIT_MESSAGE" value="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/Downloads/exercise.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

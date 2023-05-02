@@ -101,7 +101,7 @@ while True:
                     print('Победил Игрок!')
                     break
 
-            elif y_or_n == 'n' and val not in a_igrok:
+            elif y_or_n == 'n' and val not in a_igrok: # на отсутствие боченка в карте
                 print('Правильно! следующий ход')
 
             else:
