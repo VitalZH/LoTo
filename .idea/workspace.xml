@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HT/proverka.py" beforeDir="false" afterPath="$PROJECT_DIR$/HT/proverka.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +155,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.exercise" />
-        <item itemvalue="Python.logic (1)" />
         <item itemvalue="Python.proverka" />
+        <item itemvalue="Python.logic (1)" />
         <item itemvalue="Python.Paha-loto_OOP" />
         <item itemvalue="Python.blank_karta (1)" />
       </list>
@@ -254,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683009051521</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'">
+      <created>1683058420831</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683058420831</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
