@@ -46,7 +46,7 @@
       <recent name="C:\Users\gmavi\PycharmProjects\LoTo\HT" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.exercise">
+  <component name="RunManager" selected="Python.proverka">
     <configuration name="Paha-loto_OOP" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LoTo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -154,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.exercise" />
         <item itemvalue="Python.proverka" />
+        <item itemvalue="Python.exercise" />
         <item itemvalue="Python.logic (1)" />
         <item itemvalue="Python.Paha-loto_OOP" />
         <item itemvalue="Python.blank_karta (1)" />
@@ -262,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683058420831</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'">
+      <created>1683111733508</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1683111733508</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
