@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="Добавлен метод вывода __str__">
+    <list default="true" id="55243d91-f948-426b-8a53-41839d90aca3" name="Changes" comment="вывода __str__ карточки после каждого хода">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HT/proverka.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698035123530</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="вывода __str__ карточки после каждого хода">
+      <created>1698205187123</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1698205187123</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,6 +310,7 @@
     <MESSAGE value="line 48, in def_karta_stroki&#10;    Error: '&lt;' not supported between instances of 'int' and 'str'" />
     <MESSAGE value="Красивый вывод. ПОдумать как карточку Игрока выводить вместе с вопросом да\нет" />
     <MESSAGE value="Добавлен метод вывода __str__" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен метод вывода __str__" />
+    <MESSAGE value="вывода __str__ карточки после каждого хода" />
+    <option name="LAST_COMMIT_MESSAGE" value="вывода __str__ карточки после каждого хода" />
   </component>
 </project>
